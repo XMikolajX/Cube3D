@@ -1,0 +1,504 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+	body
+	{
+		background-color: black;
+		animation: changebackgroundcolor 7s  infinite alternate;
+	}
+	
+	#scena
+	{
+		position: relative;
+		
+		margin: 400px 0px 0px 800px;
+		perspective: 1000px;
+		height:200px;
+		width: 200px;
+	}
+	#kostka
+	{
+		
+		position: absolute;
+		height:100%;
+		width: 100%;
+		transform-style: preserve-3d; 
+		animation: rotateqube 7s  infinite  alternate;
+		
+		
+	
+	}
+	.sciana
+	{
+		
+		height:100%;
+		width: 100%;
+		position: absolute;
+		text-align:center;
+		line-height: 200px;
+		font-size: 50px;
+		animation: changecolor 7s  infinite  alternate;
+	}
+	.sciana:hover
+	{
+		background-color: black;
+	}
+	.front
+	{
+		background-color: white;
+		transform: translateZ(100px);
+	}
+	.back
+	{
+		background-color: white;
+		transform:  rotateY(180deg) translateZ(100px);
+	}
+	.left
+	{
+		background-color: white;
+		transform: rotateY(-90deg) translateZ(100px);
+	}
+	.right
+	{
+		background-color: white;
+		transform: rotateY(90deg) translateZ(100px);
+	}
+	.top
+	{
+		background-color: white;
+		transform: rotateX(90deg) translateZ(100px);
+	}
+	.bottom
+	{
+		background-color: white;
+		transform: rotateX(-90deg) translateZ(100px);
+	}
+	
+	.circle
+	{
+		position: relative;
+		background-color: black;
+		height: 35px;
+		width: 35px;
+		border-radius:35px;
+		top: 55px;
+		left: 25px;
+		animation: changecolorcircle 7s  infinite  alternate;
+		
+		
+	}
+	.sciana:hover .circle
+	{
+	background-color: white;
+	
+	}
+	.one
+	{
+		margin-left: 55px;
+		margin-top: 30px;
+	}
+	.two, .twoo
+	{
+		
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+	.twoo
+	{
+		top: 0px;
+	}
+	.three, .threee
+	{
+		margin-left: 30px;
+	}
+	.threee, .threeee
+	{
+		top: 0px;
+	}
+	.threeee
+	{
+		left: 27px;
+	}
+	.four, .fourr
+	{
+		margin-left: 30px;
+		
+	}
+	.fourr,  .fourrr,  .fourrrr
+	{
+		top: 0px;
+	}
+	.fourrr
+	{
+		left:0px;
+		top:5px;
+	}
+	.fourrrr
+	{
+		left: 55px;
+		top: -30px;
+	}
+	.five, .fivee
+	{
+		margin-left: 20px;
+	}
+	 .fivee, .fiveee
+	{
+		top: 0px;
+	}
+	.fivee
+	{
+		margin-left: 50px;
+	}
+	.fiveee, .fiveee, .fiveeee, .fiveeeee
+	{
+		top: 0px;
+	}
+	.fiveee
+	{
+		left:0px;
+		top:5px;
+	}
+	.fiveeee
+	{
+		left: 75px;
+		top: -30px;
+	}
+	.fiveeeee
+	{
+		left: 37.5px;
+		top: -85px;
+	}
+	.six, .sixx
+	{
+		margin-left: 30px;
+	}
+	.sixx,  .sixxx,  .sixxxx, .sixxxxx, .sixxxxxx
+	{
+		top: 0px;
+	}
+	.sixxx
+	{
+		left:0px;
+		top: 5px;
+	}
+	.sixxxx
+	{
+		left: 55px;
+		top: -30px
+		
+	}
+	
+	.sixxxxx
+	{
+		left: 0px;
+		top: -25px;
+	}
+	.sixxxxxx
+	{
+		left: 55px;
+		top: -60px;
+	}
+	@keyframes changebackgroundcolor 
+	{
+		from
+		{
+			background-color: black;
+		}
+		to
+		{
+			background-color: white;
+		}
+	}
+	
+	@keyframes rotateqube
+	{
+		from
+		{
+			
+		}
+		to
+		{
+			
+			transform: rotateY(-240deg) rotateX(360deg) translateX(-500px); /*rotateX(360deg) translateX(-500px)*/
+		}
+	}
+
+=====================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
